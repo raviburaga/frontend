@@ -10,7 +10,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Form />} />
             <Route path='/admin' element={<Admin />} />
-            <Route path='/fetchdb' element={< Fetch/>} />
+            <Route path='/admin/fetchdb' element={<Fetch />} />
           </Routes>
         </Router>
   );

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 export default function AdminLogin() {
+
+    const navigate = useNavigate();
     const username1 = 'Admin';
     const password1 = 'admin@rads@123';
     const [formData, setFormData] = useState({
@@ -17,8 +20,11 @@ export default function AdminLogin() {
 
         if (username1 === formData.username && password1 === formData.password) {
             console.log("Credentials Matched");
+            navigate("./fetchdb");
+            
         } else {
             console.log('Error :');
+            alert('invalid Credentials')
         }
     };
 
@@ -51,9 +57,8 @@ export default function AdminLogin() {
                             className="w-full border border-gray-300 rounded-md p-2 mt-1"
                         />
                     </div>
-                    <a href="./fetchdb" className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">
-                        Submit
-                    </a>
+                     <button type='submit' className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">Submit</button>
+                    
                 </form>
             </div>
         </section>
