@@ -45,7 +45,7 @@ function UserForm() {
     return (
         <div className="font-sans bg-gray-100 min-h-screen">
             <div className="absolute top-0 left-0 w-full bg-blue-500 p-4 box-border mb-8">
-                <div className="text-3xl font-bold text-white text-center">
+                <div className="text-3xl font-bold text-white text-center sm:text-xl">
                     Wings Registration Form
                 </div>
             </div>
