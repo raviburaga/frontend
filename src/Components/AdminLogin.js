@@ -51,7 +51,7 @@ export default function AdminLogin() {
                             className="w-full border border-gray-300 rounded-md p-2 mt-1"
                         />
                     </div>
-                    <a href="./backend/fetchdb" className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">
+                    <a href="./fetchdb" className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">
                         Submit
                     </a>
                 </form>
