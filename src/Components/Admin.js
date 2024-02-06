@@ -66,7 +66,9 @@ function Userdata() {
             ))}
           </tbody>
         </table>
-        
+        <div className="text-right mt-4 text-gray-600">
+         <p className="font-black m-3 p-5">Total Partcipants: {userData.length}</p> 
+        </div>
       </div>
     </div>
   );
