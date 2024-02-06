@@ -6,7 +6,7 @@ function Userdata()
     const [userData, setUserdata]= useState([]); 
     useEffect( ()=>{
         const getUserdata= async()=>{
-            const reqData= await fetch("http://localhost:5000/api/user");
+            const reqData= await fetch("http://localhost:5000/api/mongodb");
             const resData= await reqData.json();
             setUserdata(resData);
            // console.log(resData);
