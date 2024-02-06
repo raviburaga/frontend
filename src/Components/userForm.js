@@ -57,7 +57,7 @@ function UserForm() {
             <div className="max-w-md mx-auto p-8 bg-white rounded-md shadow-md mt-10">
                 <form onSubmit={handleSubmit}>
                     <p className="mb-2">Name:</p>
-                    <input type="text" name="name" onChange={handleChange} className="w-full border-2 border-gray-300 rounded-md p-2 mb-4" />
+                    <input type="text" required name="name" onChange={handleChange} className="w-full border-2 border-gray-300 rounded-md p-2 mb-4" />
 
                     <p className="mb-2">Course:</p>
                     <select name="course" id="course" onChange={handleChange} className="w-full border-2 border-gray-300 rounded-md p-2 mb-4">
