@@ -16,8 +16,7 @@ export default function AdminLogin() {
         e.preventDefault();
 
         if (username1 === formData.username && password1 === formData.password) {
-            console.log("Credentials  Matched");
-            
+            console.log("Credentials Matched");
         } else {
             console.log('Error :');
         }
@@ -25,7 +24,7 @@ export default function AdminLogin() {
 
     return (
         <section className="min-h-screen flex justify-center items-center bg-gray-200">
-            <div className="bg-white p-8 rounded shadow-md">
+            <div className="max-w-md w-full bg-white p-8 rounded shadow-md">
                 <h2 className="text-2xl font-bold mb-4">Admin Login</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
@@ -52,9 +51,9 @@ export default function AdminLogin() {
                             className="w-full border border-gray-300 rounded-md p-2 mt-1"
                         />
                     </div>
-                    <button type='submit' className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">
+                    <a href="/fetch" className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">
                         Submit
-                    </button>
+                    </a>
                 </form>
             </div>
         </section>

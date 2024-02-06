@@ -23,6 +23,7 @@ function UserForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("submit Data", data);
+        alert("Submission Success")
         try {
             setData({
                 name: '',
@@ -35,7 +36,7 @@ function UserForm() {
             })
             await axios.post('http://localhost:3002/api/mongodb', data);
             console.log("FormData added to db");
-            alert("Submission Success")
+            
         } catch (error) {
             console.error('Error:', error.message);
         }
